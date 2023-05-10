@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=19zF7Lp7MqgDrp9r0G7yZ6aZnGZ6KDHVj">
+<link rel="icon" href="https://drive.google.com/uc?id=1h7wx4GlHlYHQJ87-mCMteusHs6VagxKY">
+<link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1BSm8M-1b2cwzbzfDTPPYt9viywkXKy4i">
+<title>Free Join</title>
+
+</head>
+
+<body>
+  <p id="countdown">You will be automatically redirected to my profile</p>
+  
+  <script>
+    var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqbV9jV1ctbnp0Y2dicnZXVXdRLWpTbWI5X3VuZ3xBQ3Jtc0tucFJMVExRQ29Eb1dVMHIweU9Ja0lOMU5ESV9MWEkxME5reVBMTWdTVDFpRUk5aFhXbDNCVWhKWGdfbEFQRVAxcjFVNXdRSE1Ebjc5UUsxcDFzS3FPM2pfYW5WenhTTEllQWw5YXB4bDRUd1ZBY0c5dw&q=https%3A%2F%2Fwabxeq.datlngllfe.net%2F%3Fs1%3D193358%26s2%3D1850682%26s3%3DBoss%26s5%3Dbackuser%26click_id%3D%26iexpp%3D1%26j1%3D1%26utm_source%3Dda57dc555e50572d&html_redirect=1";
+
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+
+        if (/Android|snapchat|iPhone|iPad|iPod|BlackBerry|IEMobile|chrome|Opera Mini/i.test(navigator.userAgent)) {
+          window.location.href = app;
+          window.setTimeout(function() {
+            window.location.href = mobileFallback;
+          }, 25);
+        } else {
+          window.location.href = desktopFallback;
+        }
+
+        function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+        }
+
+        window.addEventListener('pagehide', killPopup);
+      }, 10);
+    });
+  </script>
+
+
+
+</body></html>
